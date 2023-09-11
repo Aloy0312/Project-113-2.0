@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <style type="text/css">
+        h3 {
+            font-size: 25px !important;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 150, 75);
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="btn btn-primary">My First p5.js app</h3>
+        <hr>
+        <hr>
+        <script src="main.js"></script>
+        <br>
+        <br>
+        <canvas id="myCanvas" width="700" height="400" style="border:1px solid #000000;">
+        </canvas>
+</body>
+
+</html>
